@@ -1,29 +1,23 @@
 {
   "name": "go-green-project",
+  "private": true,
   "version": "1.0.0",
-  "description": "Rheinschafe-project",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build --base=/go-green-project/",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yulia-fig/go-green-project.git"
-  },
-  "keywords": [],
-  "author": "Yulia_Fig <fihlevska@gmail.com>",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/yulia-fig/go-green-project/issues"
-  },
-  "homepage": "https://github.com/yulia-fig/go-green-project#readme",
   "devDependencies": {
-    "vite": "^8.0.3"
+    "glob": "^11.0.0",
+    "postcss": "^8.4.41",
+    "postcss-sort-media-queries": "^5.2.0",
+    "vite": "^5.4.6"
   },
-  "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-}
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
 }

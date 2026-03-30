@@ -383,4 +383,5 @@ section {
 }
 
 .wrapper-welcome {
+  display: block;
 }
