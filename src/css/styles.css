@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
@@ -62,7 +69,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-button {
+.button {
   cursor: pointer;
 }
 .container {
@@ -78,7 +85,9 @@ section {
 }
 /*Header*/
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
   width: 100%;
   font-weight: 700;
   font-size: 18px;
@@ -99,6 +108,8 @@ section {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+  z-index: 2;
 }
 .header-nav {
   color: #2e2f42;
@@ -118,6 +129,9 @@ section {
   display: inline-block;
   margin-right: 76px;
 }
+.header-link-logo:hover {
+  color: #ffffff;
+}
 .header-list {
   color: #2e2f42;
   list-style: none;
@@ -129,7 +143,7 @@ section {
 .header-link {
   position: relative;
   display: block;
-  color: #2e2f42;
+  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -141,10 +155,11 @@ section {
   gap: 40px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link.current {
-  color: #3eb489;
+.current {
+  color: #1dbf73;
 }
-.header-link::after {
+
+/*.header-link::after {
   content: "";
   position: absolute;
   left: 0px;
@@ -155,17 +170,18 @@ section {
   border-radius: 2px;
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-link:hover:after,
+}*/
+/*.header-link:hover:after,
 .header-link:focus::after,
 .header-link.current::after {
   opacity: 1;
-}
+}*/
+
 .header-link:hover {
-  color: #404bbf;
+  color: #1dbf73;
 }
 .header-link:focus {
-  color: #404bbf;
+  color: #1dbf73;
 }
 /* Main */
 .main-section {
@@ -176,7 +192,7 @@ section {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding: 188px 0 188px;
+  padding: 437px 0;
   background-image:
     linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../image.jpg/slides/slider-1.jpg);
