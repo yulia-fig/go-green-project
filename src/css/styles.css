@@ -363,7 +363,7 @@ section {
   border-radius: 4px;
   padding: 14px 30px;
   align-items: center;
-  margin: 20px 90px;
+  margin: 20px auto;
   display: block;
   min-width: 169px;
   height: 56px;
